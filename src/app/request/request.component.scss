@@ -1,0 +1,55 @@
+.send-form {
+  display: grid;
+}
+
+.send-form--header {
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 75px;
+  margin-top: 0;
+}
+
+.send-form input {
+  font-size: 16px;
+  line-height: 30px;
+  width: 333px;
+  border: none;
+  border-bottom: 2px solid #32cfb6;
+  margin-bottom: 35px;
+  outline: none;
+  background: transparent;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+label .send-form--email-input {
+  margin-bottom: 50px;
+}
+
+.send-form--text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #1db8a4;
+}
+
+.send-form--button {
+  width: 243px;
+  height: 60px;
+  border-radius: 5px;
+  background-image: linear-gradient(49deg, #fb6a4e 0%, #ff606a 100%);
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  border: none;
+  font-family: "Comic Sans MS", sans-serif;
+  margin: auto;
+  cursor: pointer;
+}
+
+.contacts--form-input {
+  color: white;
+}
+
+.header--form-input {
+  color: #272f2f;
+}

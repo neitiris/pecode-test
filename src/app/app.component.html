@@ -1,0 +1,100 @@
+<div class="App">
+
+  <div class="header">
+    <div class="header-container">
+      <nav class="main--nav">
+        <ul class="nav_list">
+          <li class="nav_list--item" *ngFor="let nav of navigation">
+            <a class="nav_list--link" href="{{nav.url}}">{{nav.name}}</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="contact">
+        <app-request
+          style="padding-top: 145px;"
+          inputColorClass="header--form-input"
+        ></app-request>
+        <img class="dev-png" src="../assets/icons/image.png" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <h2 class="block-header requirement--header">OUR REQUIREMENT</h2>
+
+  <div class="requirement">
+    <ul class="requirement_list">
+      <li class="requirement_list--item" *ngFor="let requirement of requirementList">
+        <img src="{{requirement.img}}" alt="requirement">
+        <span>
+            {{requirement.text}}
+          </span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="help">
+    <img src="assets/icons/2.png" alt="" class="help--img">
+    <div class="help--container">
+      <h2 class="block-header help--header">HELP</h2>
+      <ul class="help--list">
+        <li class="help--list_item" *ngFor="let helpDetail of helpDetails">
+          <span class="numeration">{{helpDetail.num}}.</span>
+          <span class="details">{{helpDetail.detail.toUpperCase()}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="block-header offer--header">WE OFFER:</h2>
+  <div class="offer">
+    <ul class="offer--list">
+      <li *ngFor="let offer of offerList" class="offer--list-item">
+        <figure class="offer--img_container">
+          <img
+            [src]="offer.img || offer.imgOut"
+            (mouseover)= "offer.img = offer.imgOn"
+            (mouseout)= "offer.img = offer.imgOut"
+            alt="offer">
+        </figure>
+        <span>{{offer.text}}</span>
+      </li>
+    </ul>
+
+    <div class="contacts">
+      <h2 class="block-header contacts--header">CONTACTS</h2>
+      <div class="contacts--content">
+        <app-request class="contacts--send-form" inputColorClass="contacts--form-input"></app-request>
+        <div class="contacts--address-container">
+          <h2 class="contacts--address-header">GET IN TOUCH</h2>
+          <div class="address">
+            <span class="contacts--address-line">Ukraine, Lviv</span>
+            <span class="contacts--address-line">Telephone: +380509214381</span>
+            <span class="contacts--address-line">E-mail: pecodesoftware@gmail.com</span>
+          </div>
+          <div class="socials">
+            <a
+              class="socials--link"
+              *ngFor="let link of socials"
+              href="{{link.url}}"
+            >
+              <img
+                [src]="link.img || link.imgOut"
+                (mouseover)= "link.img = link.imgOn"
+                (mouseout)= "link.img = link.imgOut"
+                alt="social">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map">
+      <img class="map-img" src="assets/icons/map.png" alt="map">
+      <img class="pin-img" src="assets/icons/pin.png" alt="location">
+    </div>
+
+  </div>
+
+</div>
