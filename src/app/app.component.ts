@@ -80,7 +80,11 @@ export class AppComponent {
     {img: '', imgOut: 'assets/icons/offers/6.png', imgOn: 'assets/icons/offers/hover6.png', text: 'English lessons'}
   ];
   public socials = [
-    {img: '', imgOut: 'assets/icons/social_network/linkedin.png', imgOn: 'assets/icons/social_network/linkedin_active.png', url: '/#'},
+    {
+      img: '',
+      imgOut: 'assets/icons/social_network/linkedin.png',
+      imgOn: 'assets/icons/social_network/linkedin_active.png',
+      url: '/#'},
     {img: '', imgOut: 'assets/icons/social_network/twitter.png', imgOn: 'assets/icons/social_network/twitter_active.png', url: '/#'},
     {img: '', imgOut: 'assets/icons/social_network/fb.png', imgOn: 'assets/icons/social_network/fb_active.png', url: '/#'},
   ];

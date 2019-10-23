@@ -19,8 +19,8 @@
 }
 
 .header {
-  background: url(/assets/icons/bg_png/1.png) right top no-repeat;
-  background-size: 63%;
+  background: url("/pecode-test/assets/icons/bg_png/1.png") right top no-repeat;
+  background-size: 66% 790px;
   height: 1075px;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .requirement--header::before {
-  background: url(/assets/icons/bg_png/leftBubbles.png) left bottom 100% no-repeat;
+  background: url("/pecode-test/assets/icons/bg_png/leftBubbles.png") left bottom 100% no-repeat;
   content: " ";
   position: absolute;
   width: 217px;
@@ -181,7 +181,7 @@
                           OFFER
 ***********************************************************/
 .offer {
-  background: url("/assets/icons/bg_png/rightBubles.png") right top no-repeat, url("/assets/icons/bg_png/footer.png") bottom no-repeat;
+  background: url("/pecode-test/assets/icons/bg_png/rightBubles.png") right top no-repeat, url("/pecode-test/assets/icons/bg_png/footer.png") bottom no-repeat;
   padding-top: 130px;
 }
 
@@ -262,7 +262,7 @@
 
 .map {
   position: relative;
-  margin-bottom: 31px;
+  padding-bottom: 31px;
 }
 
 .pin-img {

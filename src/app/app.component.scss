@@ -1,6 +1,11 @@
 /***********************************************************
                         GENERAL
 ***********************************************************/
+$rightBubblesUrl: "/pecode-test/assets/icons/bg_png/rightBubles.png";
+$leftBubblesUrl: "/pecode-test/assets/icons/bg_png/leftBubbles.png";
+$headerBackgroundUrl: "/pecode-test/assets/icons/bg_png/1.png";
+$footerBackgroundUrl: "/pecode-test/assets/icons/bg_png/footer.png";
+
 .App {
   font-family: "Comic Sans MS", sans-serif;
   max-width: 1900px;
@@ -19,8 +24,8 @@
 }
 
 .header {
-  background: url(/assets/icons/bg_png/1.png) right top no-repeat;
-  background-size: 63%;
+  background: url($headerBackgroundUrl) right top no-repeat;
+  background-size: 66% 790px;
   height: 1075px;
 }
 
@@ -75,7 +80,7 @@
 }
 
 .requirement--header::before {
-  background: url(/assets/icons/bg_png/leftBubbles.png) left bottom 100% no-repeat;
+  background: url($leftBubblesUrl) left bottom 100% no-repeat;
   content: " ";
   position: absolute;
   width: 217px;
@@ -182,9 +187,7 @@
 ***********************************************************/
 
 .offer {
-  background:
-    url("/assets/icons/bg_png/rightBubles.png") right top no-repeat,
-    url("/assets/icons/bg_png/footer.png") bottom no-repeat;
+  background: url($rightBubblesUrl) right top no-repeat, url($footerBackgroundUrl) bottom no-repeat;
   padding-top: 130px;
 }
 
@@ -266,7 +269,7 @@
 
 .map {
   position: relative;
-  margin-bottom: 31px;
+  padding-bottom: 31px;
 }
 
 .pin-img {

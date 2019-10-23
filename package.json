@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint && npm run lint:styles",
-    "lint:styles": "stylelint \"apps/**/*.scss\" && stylelint \"libs/**/*.scss\""
+    "lint:styles": "stylelint \"apps/**/*.scss\" && stylelint \"libs/**/*.scss\"",
+    "deploy": "ng build --prod && angular-cli-ghpages --branch gh-pages"
   },
   "private": true,
   "dependencies": {
