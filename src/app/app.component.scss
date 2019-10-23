@@ -180,8 +180,11 @@
 /***********************************************************
                           OFFER
 ***********************************************************/
+
 .offer {
-  background: url("/assets/icons/bg_png/rightBubles.png") right top no-repeat, url("/assets/icons/bg_png/footer.png") bottom no-repeat;
+  background:
+    url("/assets/icons/bg_png/rightBubles.png") right top no-repeat,
+    url("/assets/icons/bg_png/footer.png") bottom no-repeat;
   padding-top: 130px;
 }
 
@@ -221,6 +224,7 @@
 /***********************************************************
                         CONTACTS
 ***********************************************************/
+
 .contacts {
   color: white;
   max-width: 1024px;
@@ -270,5 +274,3 @@
   left: 995px;
   bottom: 133px;
 }
-
-/*# sourceMappingURL=app.component.css.map */

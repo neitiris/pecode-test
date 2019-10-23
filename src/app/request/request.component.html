@@ -1,0 +1,20 @@
+<form class="send-form">
+  <h3 class="send-form--header">SENT REQUEST</h3>
+  <label>
+    <input
+      type="text"
+      placeholder="Input your name"
+      [ngClass]="inputColorClass"
+    >
+  </label>
+  <span class="send-form--text">INPUT EMAIL</span>
+  <label>
+    <input type="email"
+           placeholder="Input your email"
+           value="example_email@gmail.com"
+           class="send-form--email-input"
+           [ngClass]="inputColorClass"
+    >
+  </label>
+  <button class="send-form--button" type="submit">SENT</button>
+</form>
